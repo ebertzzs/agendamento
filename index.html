@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://transpoli.com.br/imagens/logo-sobre.png">
+    <title>Importações Transpoli Transportes</title>
+</head>
+<body>
+       <datalist id="listaMotoristas">  
+     <option value="Jose Josnei">
+     <option value="Francisco Machado">
+       </datalist>
+
+       <datalist id="listaPlacas">
+        <option value="AYK8G66"></option>
+        <option value="RLO9D54"></option>
+       </datalist>
+   
+   <nav>
+     <h1 class="fontemasque">Transpoli Transportes Importações</h1>
+    <ul>
+    <li class="cmotorista"><a href="cadastros/motorista.html">Cadastrar Motorista</a></li>      
+    <li class="cplaca"><a href="cadastros/placa.html">Cadastrar Placa </a></li> 
+   </ul>
+   </nav>
+
+<div class="container">
+<div class="adc">
+    <div>
+        <p>Duimp</p>
+        <input type="text" id="duimp">
+    </div>
+
+    <div>
+        <p>Processo interno</p>
+        <input type="text" id="pinterno">
+    </div>
+
+    <div>
+        <p>PROC</p>
+        <input type="text" id="proc">
+    </div>
+
+    <div>
+        <p>Numero BL</p>
+        <input type="text" id="bl">
+    </div>
+
+    <div>
+        <p>Numero do Container</p>
+        <input type="text" id="ncnt">
+    </div>
+
+    <div>
+        <p>Motorista</p>
+        <input type="text" id="motorista" list="listaMotoristas">
+    </div>
+
+    <div>
+        <p>Placa</p>
+        <input type="text" id="placa" list="listaPlacas">
+    </div>
+
+    <div>
+        <p>NF Importação</p>
+        <input type="text" id="nf">
+    </div>
+
+    <div class="full">
+        <p>Agendamento</p>
+        <input type="date" id="data">
+        <input type="time" id="hora">
+    </div>
+
+    <button id="adicionarProc">Adicionar</button>
+</div>
+</div>
+
+   <main>
+
+
+    <div class="import"> </div>
+
+   </main>
+   
+<script src="script.js">
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+@font-face {
+    font-family: 'fontemasque';
+    src: url('font/tpfonte.ttf') format('truetype');
+}
+
+/* aplica no h1 */
+.fontemasque {
+    font-family: 'fontemasque', sans-serif;
+    font-size: 26px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #2e4366, #05337e);
+    color: #d1b40e;
+}
+
+/* H1 na esquerda */
+nav h1 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #d1b40e;
+    margin: 0;
+}
+
+/* UL vai empurrar tudo pra direita */
+nav ul {
+    display: flex;
+    margin-left: auto; /* ISSO FAZ IR PRO CANTO DIREITO */
+    padding: 0;
+    
+}
+
+/* Itens */
+nav li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d1b40e;
+}
+
+
+
+
+/* Container centralizador */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Card */
+.adc {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 10px 4px 20px rgba(41, 41, 41, 0.1);
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 15px;
+}
+
+/* Labels */
+.adc p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Inputs */
+.adc input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Ocupa linha inteira */
+.full {
+    grid-column: span 2;
+}
+
+/* Botão */
+#adicionarProc {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #2e4366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#adicionarProc:hover {
+    background-color: #1b5fbf;
+}
+
+
+
+/* Container onde ficam os cards */
+.import {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.1);
+    border-left: 5px solid #155eb1;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* Grid interno */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+}
+
+/* Texto */
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.card span {
+    font-weight: bold;
+    color: #1d4f8a;
+}
+
+/* Linha inteira */
+.full {
+    grid-column: span 2;
+}
+
+/* Ações */
+.card-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Botão remover */
+.btn-remover {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-remover:hover {
+    background: #c0392b;
+}
